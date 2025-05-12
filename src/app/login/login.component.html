@@ -1,9 +1,11 @@
 <div class="container">
   <div class="form-box">
     <h2>Login</h2>
-    <input type="text" placeholder="Username" />
-    <input type="password" placeholder="Password" />
-    <button class="login-btn">Login</button>
-    <a class="link" href="/register">Create Account</a>
+    <form (ngSubmit)="login()">
+      <input type="text" placeholder="Username" name="username" required [(ngModel)]="username" />
+      <input type="password" placeholder="Password" name="password" required [(ngModel)]="password" />
+      <button class="login-btn" type="submit">Login</button>
+    </form>
+    <a class="link" routerLink="/register">Create Account</a>
   </div>
 </div>

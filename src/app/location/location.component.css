@@ -43,3 +43,26 @@ hr {
   border-radius: 6px;
   font-weight: bold;
 }
+
+
+/* Fix for Leaflet's marker icons */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.leaflet-pane,
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 400 !important;
+}
+
+
+#map {
+  height: 300px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}

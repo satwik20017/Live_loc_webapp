@@ -1,1 +1,15 @@
-sensgs
+<div class="background-blob"></div>
+
+<div class="container">
+  <h2>Your Live Location</h2>
+  <div class="separator"></div>
+  <p>Tracking in real-time...</p>
+  <p><strong>Latitude:</strong> {{ lat }}</p>
+  <p><strong>Longitude:</strong> {{ lng }}</p>
+
+  <div id="map"></div>
+</div>
+
+<form action="/logout" method="POST">
+  <button type="submit">Logout</button>
+</form>
