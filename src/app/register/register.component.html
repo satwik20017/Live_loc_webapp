@@ -1,0 +1,14 @@
+<div class="register-wrapper">
+  <div class="register-box">
+    <h2>Register</h2>
+    <form >
+        <!-- (ngSubmit)="onRegister()" #registerForm="ngForm" -->
+      <input type="text" placeholder="Username" name="username"  required />
+      <!-- [(ngModel)]="username" -->
+      <input type="password" placeholder="Password" name="password"  required />
+      <!-- [(ngModel)]="password" -->
+      <button type="submit">Register</button>
+    </form>
+    <a routerLink="/login" class="back-link">Back to Login</a>
+  </div>
+</div>
