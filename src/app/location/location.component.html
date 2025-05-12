@@ -1,15 +1,12 @@
-<div class="background-blob"></div>
 
-<div class="container">
-  <h2>Your Live Location</h2>
-  <div class="separator"></div>
-  <p>Tracking in real-time...</p>
-  <p><strong>Latitude:</strong> {{ lat }}</p>
-  <p><strong>Longitude:</strong> {{ lng }}</p>
+  <div class="container">
+    <div class="location-box">
+      <h2>Your Live Location</h2>
+      <p>Tracking in real-time...</p>
+      <p><strong>Latitude:</strong> <span id="lat">--</span></p>
+      <p><strong>Longitude:</strong> <span id="lng">--</span></p>
+      <div id="map" class="map"></div>
+      <button class="logout-btn" (click)="logout()">Logout</button>
+    </div>
+  </div>
 
-  <div id="map"></div>
-</div>
-
-<form action="/logout" method="POST">
-  <button type="submit">Logout</button>
-</form>

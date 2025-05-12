@@ -1,3 +1,10 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -7,21 +14,16 @@
 }
 
 .location-box {
-  background: white;
+  background: linear-gradient(to bottom, #f9c5d1, #a6c1ee);
   padding: 30px;
   border-radius: 16px;
   width: 600px;
   border: 2px solid black;
-  background: linear-gradient(to bottom, #f9c5d1, #a6c1ee);
   position: relative;
 }
 
 h2 {
   text-align: center;
-}
-
-hr {
-  margin: 10px 0;
 }
 
 .map {
@@ -30,6 +32,7 @@ hr {
   margin-top: 10px;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logout-btn {
@@ -42,10 +45,9 @@ hr {
   border: none;
   border-radius: 6px;
   font-weight: bold;
+  cursor: pointer;
 }
 
-
-/* Fix for Leaflet's marker icons */
 .leaflet-container {
   height: 100%;
   width: 100%;
@@ -56,13 +58,4 @@ hr {
 .leaflet-top,
 .leaflet-bottom {
   z-index: 400 !important;
-}
-
-
-#map {
-  height: 300px;
-  width: 100%;
-  margin-top: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }

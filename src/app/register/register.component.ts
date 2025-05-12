@@ -18,7 +18,7 @@ export class RegisterComponent {
   register() {
     this.auth.register(this.username, this.password).subscribe({
       next: () => this.router.navigate(['/login']),
-      error: err => alert('Registration failed')
+      error: err => alert('Username already exists')
     });
   }
 }

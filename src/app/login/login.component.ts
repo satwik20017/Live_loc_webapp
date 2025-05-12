@@ -18,8 +18,14 @@ export class LoginComponent {
 
   login() {
     this.auth.login(this.username, this.password).subscribe({
-      next: () => this.router.navigate(['/location']),
-      error: err => alert('Login failed')
-    });
+      next:(res:any)=>{
+        this.router.navigate(['location'])
+      },error:(err:any)=>{
+        alert(err?.msg || 'Somethin went to wrong');
+      },complete:()=>{
+
+      }
+    })
   }
+  
 }
